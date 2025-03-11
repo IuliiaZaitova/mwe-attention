@@ -1,6 +1,13 @@
 # Attention on Multiword Expressions
 Code and data for the paper "Attention on Multiword Expressions: A Multilingual Study of BERT-based Models with Regard to Idiomaticity and Microsyntax" (Findings of NAACL 2025)
 
+# TLDR: 
+Fine-tuning BERT-based models significantly influences how they allocate attention to different types of Multiword Expressions. Specifically, models fine-tuned on semantic tasks tend to distribute attention to **idiomatic** expressions more evenly across layers. Models fine-tuned on syntactic tasks show an increase in attention to **microsyntactic units** in the lower layers, corresponding with syntactic processing requirements.
+
+# Abstract:
+This study analyzes the attention patterns of fine-tuned encoder-only models based on the BERT architecture (BERT-based models) towards two distinct types of Multiword Expressions (MWEs): idioms and microsyntactic units (MSUs). Idioms present challenges in semantic non-compositionality, whereas MSUs demonstrate unconventional syntactic behavior that does not conform to standard grammatical categorizations. We aim to understand whether fine-tuning BERT-based models on specific tasks influences their attention to MWEs, and how this attention differs between semantic and syntactic tasks. We examine attention scores to MWEs in both pre-trained and fine-tuned BERT-based models. We utilize monolingual models and datasets in six Indo-European languages — English, German, Dutch, Polish, Russian, and Ukrainian. Our results show that fine-tuning significantly influences how models allocate attention to MWEs. Specifically, models fine-tuned on semantic tasks tend to distribute attention to idiomatic expressions more evenly across layers. Models fine-tuned on syntactic tasks show an increase in attention to MSUs in the lower layers, corresponding with syntactic processing requirements.
+
+
 ## Authors
 - Iuliia Zaitova
 - Vitalii Hirak
